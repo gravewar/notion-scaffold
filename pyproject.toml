@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notion-scaffold"
+version = "0.1.0"
+description = "Answer a few questions and get a ready-to-use Notion workspace."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Danielle Burns" }]
+dependencies = ["requests>=2.31", "streamlit>=1.45", "anthropic>=0.40"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["scaffold"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]

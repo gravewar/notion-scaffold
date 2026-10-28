@@ -1,0 +1,2 @@
+{ "compilerOptions": { "strict": true, "noEmit": true, "target": "es2022", "module": "nodenext",
+  "moduleResolution": "nodenext", "skipLibCheck": true }, "files": ["payloads.ts"] }
